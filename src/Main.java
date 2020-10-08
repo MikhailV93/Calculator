@@ -6,6 +6,8 @@ public class Main {
                     Scanner in = new Scanner(System.in);
                     String text = in.nextLine();
                     in.close();
+                    if (text.charAt(0) == ' ')
+                        throw new Exception("You must start the line with a number!");
                     if ((text.charAt(0) == 'I') || (text.charAt(0) == 'V') || (text.charAt(0) == 'X')) {
                         Result_with_numbers_roman y = new Result_with_numbers_roman();
                         First_number_roman a = new First_number_roman();
